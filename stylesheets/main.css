@@ -1,0 +1,3938 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+}
+@media screen and (min-width:900px){
+
+    .copyrights{
+        position: fixed;
+        font-size: 1.0vw;
+        bottom: 0;
+        left: 0;
+        height: 2.5vw;
+        border-radius: 2000px;
+        line-height: 2.5vw;
+        padding-left: 3vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 2vw;
+    }
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .reldiv{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    video{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+
+
+    .topnavbar{
+        height: 4vw;
+        box-sizing: content-box;
+        border: 2px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .topnavbar h1{
+        line-height: 4vw;
+        font-size: 2.4vw;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 3vw;
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .topnavbar #checkbtn{
+        display: none;
+    }
+    
+    .topnavbar .fa-bars{
+        display: none;
+    }
+    
+    .topnavbar .navgtn{
+        float: right;
+        list-style-type: none;
+    }
+    
+    .topnavbar .navgtn li{
+        display: inline-block;
+        font-size: 1.2vw;
+        line-height: 4vw;
+        margin: 0 0.8vw;
+    }
+    
+    .topnavbar .navgtn li:last-child{
+        margin-right: 2vw;
+    }
+    
+    .topnavbar .navgtn li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: ibl;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 0.25vw 1vw ;
+    } 
+
+    .topnavbar .navgtn li a:hover{
+        padding: 0.05vw 0.8vw ;
+    } 
+
+
+    .topnavbar .navgtn li i{
+        margin-right: 0.3vw;
+    }
+    .aboutnavbar .reldiv ul a.about{
+        color: black;
+        background-color: #fff;
+    }
+    .acadnavbar .reldiv ul a.acad{
+        color: black;
+        background-color: #fff;
+    }
+    .intnavbar .reldiv ul a.int{
+        color: black;
+        background-color: #fff;
+    }
+    .achievnavbar .reldiv ul a.achiev{
+        color: black;
+        background-color: #fff;
+    }
+    .contnavbar .reldiv ul a.cont{
+        color: black;
+        background-color: #fff;
+    }
+
+
+    .aboutcontent {
+        z-index: 1;
+        padding: 6vw 4vw;
+        font-family: poppins;
+    }
+
+    .aboutcontent .mypic{
+        width: 20vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 4vw 2vw;
+        float: left;
+        animation: comefromleft 1s ;
+    }
+    br.spbreak{
+        display: none;
+    }
+    .aboutcontent .text{
+        background-color: rgba(8, 44, 53, 0.541);
+        color: rgb(255, 255, 255);
+        margin-left: 26vw ;
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    /*CONTACT*/
+    
+    div.bgcontact{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-image: url(../images/bg-contact2.jpg);
+        background-size: 100% 100%;
+        z-index: -5;
+    }
+    .contact{
+        padding: 6vw 5vw 0;
+        width: 100%;
+    }
+
+    .contact .gtt{
+        float: left;
+        background-color: rgba(7, 4, 0, 0.226);
+    }
+
+    .contact h2{
+        font-size: 2vw;
+        color: rgb(255, 242, 231);
+        margin: 1vw 2vw;
+    }
+
+    .break{
+        display: none;
+    }
+
+    .contact .input1{
+        width: 18vw;
+        height: 2.2vw;
+        font-size: 1.1vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact .input2{
+        width: 24vw;
+        height: 2.5vw;
+        font-size: 1.1vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 252, 249);
+    }
+
+    .contact .input3{
+        width: 24vw;
+        height: 10vw;
+        font-size: 1.1vw;
+        padding: 0.7vw 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact #submitt{
+        display: none;
+    }
+
+    .contact .send{
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        height: 2.2vw;
+        width: 10vw;
+        margin: 1vw 2vw;
+        line-height: 2.2vw;
+        position: relative;
+        background-color: #fff;
+        cursor: pointer;
+        padding: 0 0.5vw;
+    }
+
+    .contact .send:hover > img{
+        animation: rotate 1.5s;
+    }
+    @keyframes rotate{
+        0%{
+            transform: translate(0vw,0vw);
+        }
+        40%{
+            transform: translate(10vw,-10vw) rotate(10deg);
+            opacity: 0;
+        }
+        40.01%{
+            transform: translate(-4vw,4vw);
+        }
+        80%{
+            transform: translate(0vw,0vw);
+        }
+
+        
+    }
+
+    .contact .send p{
+        font-size: 1.2vw;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .contact .send img{
+        margin: 0.20vw 0.3vw;
+        height: 1.8vw;
+        display: inline-block;
+        transition: 2s transform;
+        transform-origin: 600% 100%;
+    }
+
+    .contact .smedia{
+        width: 40vw;
+        padding-top: 1vw;
+        margin-left: 50vw;
+        padding-bottom: 2vw;
+        background-color: rgba(0, 0, 0, 0.178)
+    }
+
+    .contact .smedia .sm{
+        font-size: 1.1vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+        width: 15vw;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 1.1vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 1.3vw;
+    }
+
+    .contact .smedia a.sm:hover, .contact .smedia a.sm2:hover{
+        text-decoration: underline;
+    }
+
+    .fab,.fas{
+        margin: 0 0.5vw;
+    }
+
+    .gm{
+        font-size: 1.4vw;
+        color: rgb(173, 24, 24);
+    }
+    .mail{
+        font-size: 1.4vw;
+        color: rgb(20, 135, 230);
+    }
+    .tele{
+        font-size: 1.4vw;
+        color: rgb(5, 149, 17);
+    }
+    .fb{
+        color: rgb(27, 27, 100);
+        font-size: 1.6vw;
+    }
+    .tw{
+        color: rgb(0, 238, 255);
+        font-size: 1.6vw;
+    }
+    .gh{
+        color: rgb(5, 5, 37);
+        font-size: 1.6vw;
+    }
+    .ins{
+        color: rgb(216, 19, 206);
+        font-size: 1.6vw;
+    }
+
+    .contact .request{
+        width: 40vw;
+        margin-left: 50vw;
+        font-size: 1.2vw;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px #000;
+        padding: 3vw 2vw;
+        font-weight: 300;
+    }
+
+    .contact .request h6{
+        text-align: right;
+    }
+    /*ACHIEVMENTS*/
+    
+
+    div.bgacheiv{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(189, 139, 31, 0.24), rgba(255, 255, 255, 0.246)),url(../images/achiev.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+
+    }
+    .achievements{
+        width: 100%;
+        padding: 5vw 2vw;
+    }
+
+    .achievements .achiev{
+        width: 32vw;
+        height: 8vw;
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: 1.2vw;
+        padding: 2vw 1vw ;
+        display: inline-block;
+        margin: 1.5vw 1.5vw;
+    }
+
+    /*INTERESTS*/
+    div.bgint{
+        background-attachment: fixed;
+        background-image: url(../images/interest.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .interest{
+        padding: 5vw 2vw;
+        width: 100%;
+    }
+
+    .interest .slideview{
+        width: 24vw;
+        height: 18vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: left;
+    }
+
+    .slideview .slider{
+        width: 500%;
+        height: 100%;
+        position: relative;
+        animation: slideeffect 10s infinite linear;
+    }
+
+
+    @keyframes slideeffect{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+
+    .interest .slideview .slider img{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .interest .slider img:nth-child(1){
+        left: 0;
+    }
+
+    .interest .slider img:nth-child(2){
+        left: 20%;
+    }
+
+    .interest .slider img:nth-child(3){
+        left: 40%;
+    }
+
+    .interest .slider img:nth-child(4){
+        left: 60%;
+    }
+
+    .interest .slider img:nth-child(5){
+        left: 80%;
+    }
+
+    
+    .slidematterreldiv{
+        position: relative;
+    }
+
+    .slidematter{
+        color: white;
+        width: 68vw;
+        height: 22vw;
+        margin-left: 28vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.2vw;
+        padding: 1vw 2vw;
+        background-color: rgba(0, 0, 0, 0.295);
+    }
+
+    .slidematter .clang{
+        border: 2px solid white;
+        display: inline-block;
+        padding: 0.2vw 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .slidematter h3{
+        font-size: 2vw;
+    }
+
+    .slidematter1{
+        animation: slidematter1 10s infinite linear;
+    }
+    .slidematter2{
+        
+        animation: slidematter2 10s infinite linear;
+    }
+    .slidematter3{
+        
+        animation: slidematter3 10s infinite linear;
+    }
+    .slidematter4{
+        
+        animation: slidematter4 10s infinite linear;
+    }
+
+    
+    .stop:hover ~ .slideview .slider{
+        animation-play-state: paused;
+    }
+
+    .stop{
+        display: inline-block;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.37);
+        border: 2px solid black;
+        cursor: pointer;
+        margin: 1vw 2vw;
+        padding: 0.5vw 1vw;
+    }
+
+    .stop:hover ~ .slidematterreldiv .slidematter1{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter2{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter3{
+        animation-play-state: paused;
+    }
+    .stop:hover ~  .slidematterreldiv .slidematter4{
+        animation-play-state: paused;
+    }
+
+    @keyframes slidematter1{
+        0%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidematter2{
+        0%{
+            opacity: 0;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 1;
+        }
+        45%{
+            opacity: 1;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter3{
+        0%{
+            opacity: 0;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter4{
+        0%{
+            opacity: 0;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 1;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    /*ACADEMICS*/
+    
+    
+    div.bgacad{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(246, 210, 132, 0.514), rgba(246, 224, 162, 0.507)),url(../images/acad.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .academics{
+        padding-top: 5vw;
+        width: 100%;
+    }
+
+    .academics .schools{
+        width: 36vw;
+        float: left;
+        text-align: center;
+        margin: 2vw 5vw;
+    }
+
+    .academics .schools .cards{
+        display: inline-block;
+        height: 8.5vw;
+        width: 34vw;
+        background-color: rgb(214, 142, 47);
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 2vw 0;
+        animation: comefromleft 1s ease-out;
+    }
+
+    @keyframes comefromleft {
+        from{
+            opacity: 0.3;
+            transform: translateX(-30vw);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0vw);
+        }
+    }
+
+    .academics .schools .text{
+        margin-left: 10vw;
+        font-size: 1.0vw;
+    }
+
+    .academics .schools .cards img{
+        height: 100%;
+        width: 8.5vw;
+        float: left;
+    }
+
+    .academics .schools .cards h2{
+        margin-left: 2vw;
+        margin-top: 0.5vw;
+    }
+
+    .academics .content{
+        color: rgb(82, 49, 7);
+        background-color: rgba(255, 255, 255, 0.801);
+        margin: 2vw 5vw;
+        height: 36vw;
+        margin-left: 44vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 1.2vw;
+        text-align: justify;
+    }
+
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .aboutcontent h2{
+        margin-top: 1vw;
+        font-size: 2vw;
+        text-align: left;
+    }
+
+    .aboutcontent p{
+        margin-top: 2vw;
+        font-size: 1.3vw;
+        line-height: 2vw;
+        text-align: justify;
+    }
+    .hello{
+        height: 2vw;
+        transform-origin: 50% 100%;
+        animation: hello 1s infinite linear;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    @keyframes hello{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(10deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .typing{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 1vw;
+    }
+
+    .typing1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing1 8s infinite steps(9);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 19.88vw;
+        }
+        30%{
+            width: 19.88vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing2 8s infinite steps(10);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 23vw;
+        }
+        80%{
+            width: 23vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+
+@media screen and (min-width:1336px) and (max-width:1556px){
+    
+    .copyrights{
+        position: fixed;
+        font-size: 1.2vw;
+        bottom: 0;
+        left: 0;
+        height: 3vw;
+        border-radius: 2000px;
+        line-height: 3vw;
+        padding-left: 3vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 3vw;
+    }
+    .aboutcontent .mypic{
+        width: 23vw;
+    }
+    .contact .input1{
+        height: 2.5vw;
+    }
+    .contact .input2{
+        height: 2.5vw;
+    }
+    .contact .input3{
+        height: 13vw;
+    }
+    .contact .send{
+        height: 2.3vw;
+    }
+    .contact .smedia .sm{
+        font-size: 1.2vw;
+        margin: 0.35vw 0.5vw;
+        width: 18vw;
+    }
+    .contact .smedia .sm2{
+        font-size: 1.2vw;
+    }
+    .achievements .achiev{
+        height: 10vw;
+        font-size: 1.3vw;
+    }
+    .interest{
+        background-position: center;
+    }
+    .interest .slideview{
+        width: 26vw;
+        height: 22vw;
+    }
+    .slidematter{
+        height: 23vw;
+        font-size: 1.3vw;
+    }
+    .academics p{
+        font-size: 1.3vw;
+        margin: 0.5vw 0vw;
+    }
+    .aboutcontent h2{
+        font-size: 2.2vw;
+    }
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 1.5vw;
+        line-height: 2.3vw;
+    }
+    .hello{
+        height: 3vw;
+    }
+    .typing{
+        font-size: 3.3vw;
+    }
+    .typing1{
+        font-size: 3.3vw;
+    }
+    .typing2{
+        font-size: 3.3vw;
+    }
+
+}
+
+@media screen and (min-width:1080px) and (max-width:1336px){
+ 
+    .copyrights{
+        position: fixed;
+        font-size: 1.2vw;
+        bottom: 0;
+        left: 0;
+        height: 3.5vw;
+        border-radius: 2000px;
+        line-height: 3.5vw;
+        padding-left: 3.5vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 4vw;
+    }
+    .topnavbar{
+        height: 4.8vw;
+    }
+    
+    .topnavbar h1{
+        line-height: 4.8vw;
+        font-size: 2.6vw;
+        margin: 0 0.5vw ;
+    }
+    
+    
+    .topnavbar .navgtn li{
+        font-size: 1.3vw;
+        line-height: 4.8vw;
+    }
+    
+    .topnavbar .navgtn li:last-child{
+        margin-right: 1vw;
+    }
+
+    .aboutcontent .mypic{
+        width: 27vw;
+    }
+
+    .aboutcontent .text{
+        margin-left: 32vw ;
+    }
+
+
+    .contact h2{
+        font-size: 2.5vw;
+    }
+
+
+    .contact .input1{
+        height: 2.8vw;
+        font-size: 1.3vw;
+    }
+
+    .contact .input2{
+        height: 2.8vw;
+        font-size: 1.3vw;
+    }
+
+    .contact .input3{
+        height: 14vw;
+        font-size: 1.3vw;
+    }
+
+    .contact .send{
+        height: 2.6vw;
+        line-height: 2.6vw;
+    }
+
+    .contact .send p{
+        font-size: 1.4vw;
+    }
+    .contact .send img{
+        height: 2.0vw;
+    }
+    .contact .smedia br{
+        display: none;
+    }
+
+    .contact .smedia .sm{
+        font-size: 1.4vw;
+        display: block;
+        margin: 0.5vw 1vw;
+        width: 100%;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 1.4vw;
+        display: block;
+        margin: 0.5vw 1vw;
+        width: 100%;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 1.6vw;
+    }
+
+
+    .gm{
+        font-size: 1.8vw;
+    }
+    .mail{
+        font-size: 1.8vw;
+    }
+    .tele{
+        font-size: 1.8vw;
+    }
+    .fb{
+        font-size: 1.8vw;
+    }
+    .tw{
+        font-size: 1.8vw;
+    }
+    .gh{
+        font-size: 1.8vw;
+    }
+    .ins{
+        font-size: 1.8vw;
+    }
+
+    .contact .request{
+        font-size: 1.4vw;
+    }
+
+    .contact .request h6{
+        font-size: 1.2vw;
+    }
+
+
+    .achievements .achiev{
+        height: 10vw;
+        margin: 3vw 3vw;
+        font-size: 1.35vw;
+    }
+
+    .interest .slideview{
+        width: 30vw;
+        height: 26vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: left;
+    }
+
+
+    .slidematter{
+        width: 62vw;
+        height: 30vw;
+        margin-left: 34vw;
+        font-size: 1.5vw;
+    }
+
+    .slidematter h3{
+        font-size: 2.2vw;
+    }
+
+    .academics .schools{
+        width: 40vw;
+        margin: 2vw 3vw;
+    }
+
+    .academics .schools .cards{
+        height: 10vw;
+        width: 38vw;
+    }
+
+    .academics .schools .text{
+        margin-left: 11vw;
+        font-size: 1.2vw;
+    }
+
+    .academics .schools .cards img{
+        width: 9.5vw;
+    }
+
+    .academics .content{
+        height: 40vw;
+        margin-left: 46vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 1.4vw;
+        margin: 2vw 0;
+    }
+
+    .aboutcontent h2{
+        margin-top: 1vw;
+        font-size: 3vw;
+    }
+
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+    }
+    .hello{
+        height: 3.5vw;
+    }
+
+    .typing{
+        font-size: 3.6vw;
+    }
+
+    .typing1{
+        font-size: 3.6vw;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 23vw;
+        }
+        30%{
+            width: 23vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-size: 3.6vw;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 28vw;
+        }
+        80%{
+            width: 28vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+
+
+@media screen and (min-width:900px) and (max-width:1080px){
+ 
+    .copyrights{
+        position: fixed;
+        font-size: 1.4vw;
+        bottom: 0;
+        left: 0;
+        height: 4vw;
+        border-radius: 2000px;
+        line-height: 4vw;
+        padding-left: 4vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 4vw;
+    }
+    .topnavbar{
+        height: 5vw;
+    }
+    
+    .topnavbar h1{
+        line-height: 5vw;
+        font-size: 2.6vw;
+        margin: 0 0.5vw ;
+    }
+    
+    
+    .topnavbar .navgtn li{
+        font-size: 1.5vw;
+        line-height: 5vw;
+    }
+    .topnavbar .navgtn li a{
+        padding: 0.35vw 0.5vw;
+    }
+    .topnavbar .navgtn li a:hover{
+        padding: 0.25vw 0.35vw;
+    }
+    
+    .topnavbar .navgtn li:last-child{
+        margin-right: 0.5vw;
+    }
+
+
+    .aboutcontent .mypic{
+        width: 27vw;
+    }
+
+    .aboutcontent .text{
+        margin-left: 30vw ;
+    }
+
+
+    .contact h2{
+        font-size: 2.8vw;
+    }
+
+
+    .contact .input1{
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .contact .input2{
+        width: 35vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .contact .input3{
+        height: 16vw;
+        font-size: 1.5vw;
+        width: 35vw;
+    }
+
+    .contact .send{
+        height: 2.8vw;
+        line-height: 2.8vw;
+    }
+
+    .contact .send p{
+        font-size: 1.5vw;
+    }
+    .contact .send img{
+        height: 2.4vw;
+    }
+    .contact .smedia br{
+        display: none;
+    }
+
+    .contact .smedia .sm{
+        font-size: 1.6vw;
+        display: block;
+        margin: 0.5vw 1vw;
+        width: 100%;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 1.6vw;
+        display: block;
+        margin: 0.5vw 1vw;
+        width: 100%;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 1.8vw;
+    }
+
+
+    .gm{
+        font-size: 1.8vw;
+    }
+    .mail{
+        font-size: 1.8vw;
+    }
+    .tele{
+        font-size: 1.8vw;
+    }
+    .fb{
+        font-size: 1.8vw;
+    }
+    .tw{
+        font-size: 1.8vw;
+    }
+    .gh{
+        font-size: 1.8vw;
+    }
+    .ins{
+        font-size: 1.8vw;
+    }
+
+    .contact .request{
+        font-size: 1.6vw;
+    }
+
+    .contact .request h6{
+        font-size: 1.4vw;
+    }
+
+
+    .achievements .achiev{
+        width: 40vw;
+        height: 12vw;
+        margin: 3vw 3vw;
+        font-size: 1.6vw;
+    }
+
+    .interest .slideview{
+        width: 30vw;
+        height: 26vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: left;
+    }
+
+
+    .slidematter{
+        width: 62vw;
+        height: 32vw;
+        margin-left: 34vw;
+        font-size: 1.6vw;
+    }
+
+    .slidematter h3{
+        font-size: 2.2vw;
+    }
+
+    .academics .schools{
+        width: 40vw;
+        margin: 2vw 3vw;
+    }
+
+    .academics .schools .cards{
+        height: 10vw;
+        width: 40vw;
+    }
+
+    .academics .schools .text{
+        margin-left: 10.5vw;
+        font-size: 1.3vw;
+    }
+
+    .academics .schools .cards img{
+        width: 9.5vw;
+    }
+
+    .academics .content{
+        height: 46vw;
+        margin-left: 46vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 1.6vw;
+        margin: 2vw 0;
+    }
+
+    .aboutcontent h2{
+        margin-top: 1vw;
+        font-size: 3vw;
+    }
+
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+    }
+    .hello{
+        height: 3.5vw;
+    }
+
+    .typing{
+        font-size: 3.6vw;
+    }
+
+    .typing1{
+        font-size: 3.6vw;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 23vw;
+        }
+        30%{
+            width: 23vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-size: 3.6vw;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 28vw;
+        }
+        80%{
+            width: 28vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+
+@media screen and (max-width:900px){ 
+    .copyrights{
+        position: fixed;
+        font-size: 1.6vw;
+        bottom: 0;
+        left: 0;
+        height: 5vw;
+        border-radius: 2000px;
+        line-height: 5vw;
+        padding-left: 4vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 4vw;
+    }
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .reldiv{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    video{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+
+
+    .topnavbar{
+        height: 6vw;
+        background-color: rgba(0, 0, 0, 0.431);
+        box-sizing: content-box;
+        border: 2px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 12;
+    }
+    
+    .topnavbar h1{
+        line-height: 6vw;
+        font-size: 4vw;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 3vw;
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .topnavbar #checkbtn{
+        display: none;
+    }
+    
+    .topnavbar .fa-bars{
+        font-size: 2vw;
+        display: block;
+        margin: 0.6vw 0;
+        padding: 1vw 1vw;
+        float: right;
+        margin-right: 3vw;
+        color: white;
+        position: fixed;
+        right: 0;
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 120;
+        cursor: pointer;
+    }
+    .topnavbar #checkbtn:checked ~ .navgtn{
+        left: 50%;
+    }
+    
+    .topnavbar .navgtn{
+        padding-top: 8vw;
+        position: fixed;
+        background-color: black;
+        left: 120vw;
+        height: 100%;
+        list-style-type: none;
+        width: 50%;
+        z-index: 1;
+        transition: 0.5s left;
+    }
+    
+    .topnavbar .navgtn li{
+        display: block;
+        width: 100%;
+        font-size: 1.2vw;
+        line-height: 4vw;
+        margin: 1vw 0.8vw;
+    }
+    
+    
+    .topnavbar .navgtn li a{
+        display: inline-block;
+        font-size: 2vw;
+        width: 40vw;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 0.25vw 1vw ;
+    } 
+
+    .topnavbar .navgtn li a:hover{
+        text-decoration: underline;
+    } 
+
+
+    .topnavbar .navgtn li i{
+        margin-right: 2vw;
+    }
+
+    
+    .aboutnavbar .reldiv ul a.about{
+        color: black;
+        background-color: #fff;
+    }
+    .acadnavbar .reldiv ul a.acad{
+        color: black;
+        background-color: #fff;
+    }
+    .intnavbar .reldiv ul a.int{
+        color: black;
+        background-color: #fff;
+    }
+    .achievnavbar .reldiv ul a.achiev{
+        color: black;
+        background-color: #fff;
+    }
+    .contnavbar .reldiv ul a.cont{
+        color: black;
+        background-color: #fff;
+    }
+    
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .reldiv{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    video{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+
+
+    .topnavbar{
+        height: 6vw;
+        box-sizing: content-box;
+        border: 2px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 12;
+    }
+    
+    .topnavbar h1{
+        line-height: 6vw;
+        font-size: 4vw;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 3vw;
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .topnavbar #checkbtn{
+        display: none;
+    }
+    
+    .topnavbar .fa-bars{
+        font-size: 2vw;
+        display: block;
+        margin: 0.6vw 0;
+        padding: 1vw 1vw;
+        float: right;
+        margin-right: 3vw;
+        color: white;
+        position: fixed;
+        right: 0;
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 120;
+        cursor: pointer;
+    }
+    .topnavbar #checkbtn:checked ~ .navgtn{
+        left: 50%;
+    }
+    
+    .topnavbar .navgtn{
+        padding-top: 8vw 0;
+        position: fixed;
+        background-color: black;
+        left: 120vw;
+        height: 100%;
+        list-style-type: none;
+        width: 50%;
+        z-index: 1;
+        transition: 0.5s left;
+    }
+    
+    .topnavbar .navgtn li{
+        display: block;
+        width: 100%;
+        font-size: 1.2vw;
+        line-height: 4vw;
+        margin: 1vw 0.8vw;
+    }
+    
+    
+    .topnavbar .navgtn li a{
+        display: inline-block;
+        font-size: 2vw;
+        width: 40vw;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 0.25vw 1vw ;
+    } 
+
+    .topnavbar .navgtn li a:hover{
+        text-decoration: underline;
+    } 
+
+
+    .topnavbar .navgtn li i{
+        margin-right: 2vw;
+    }
+
+
+    .aboutcontent {
+        z-index: 1;
+        padding: 6vw 4vw;
+        font-family: poppins;
+    }
+
+    .aboutcontent .mypic{
+        width: 30vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 4vw 2vw;
+        float: left;
+        animation: comefromleft 1s ;
+    }
+
+    .aboutcontent .text{
+        background-color: rgba(8, 44, 53, 0.541);
+        color: rgb(255, 255, 255);
+        margin-left: 34vw ;
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    /*CONTACT*/
+    
+    div.bgcontact{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-image: url(../images/bg-contact2.jpg);
+        background-size: 100% 100%;
+        z-index: -5;
+    }
+    .contact{
+        padding: 8vw 5vw 0;
+        width: 100%;
+    }
+
+    .contact .gtt{
+        float: left;
+        background-color: rgba(7, 4, 0, 0.226);
+        width: 45vw;
+    }
+
+    .contact h2{
+        font-size: 3vw;
+        color: rgb(255, 242, 231);
+        margin: 1vw 2vw;
+    }
+
+    .break{
+        display: block;
+    }
+
+    .contact .input1{
+        width: 30vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact .input2{
+        width: 33vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 252, 249);
+    }
+
+    .contact .input3{
+        width: 30vw;
+        height: 20vw;
+        font-size: 1.6vw;
+        padding: 0.7vw 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact #submitt{
+        display: none;
+    }
+
+    .contact .send{
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        height: 3vw;
+        width: 14vw;
+        margin: 1vw 2vw;
+        line-height: 2.2vw;
+        position: relative;
+        background-color: #fff;
+        cursor: pointer;
+        padding: 0 0.5vw;
+    }
+
+    .contact .send:hover > img{
+        animation: rotate 1.5s;
+    }
+    @keyframes rotate{
+        0%{
+            transform: translate(0vw,0vw);
+        }
+        40%{
+            transform: translate(10vw,-10vw) rotate(10deg);
+            opacity: 0;
+        }
+        40.01%{
+            transform: translate(-4vw,4vw);
+        }
+        80%{
+            transform: translate(0vw,0vw);
+        }
+
+        
+    }
+
+    .contact .send p{
+        font-size: 1.6vw;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .contact .send img{
+        margin: 0.20vw 0.3vw;
+        height: 2.5vw;
+        display: inline-block;
+        transition: 2s transform;
+        transform-origin: 600% 100%;
+    }
+
+    .contact .smedia{
+        width: 40vw;
+        padding-top: 1vw;
+        margin-left: 50vw;
+        padding-bottom: 2vw;
+        background-color: rgba(0, 0, 0, 0.178)
+    }
+
+    .contact .smedia .sm{
+        font-size: 2vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 2vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 2.3vw;
+    }
+
+    .contact .smedia a.sm:hover, .contact .smedia a.sm2:hover{
+        text-decoration: underline;
+    }
+
+    .fab,.fas{
+        margin: 0 0.5vw;
+    }
+
+    .gm{
+        font-size: 2.5vw;
+        color: rgb(173, 24, 24);
+    }
+    .mail{
+        font-size: 2.5vw;
+        color: rgb(20, 135, 230);
+    }
+    .tele{
+        font-size: 2.5vw;
+        color: rgb(5, 149, 17);
+    }
+    .fb{
+        color: rgb(27, 27, 100);
+        font-size: 2.5vw;
+    }
+    .tw{
+        color: rgb(0, 238, 255);
+        font-size: 2.5vw;
+    }
+    .gh{
+        color: rgb(5, 5, 37);
+        font-size: 2.5vw;
+    }
+    .ins{
+        color: rgb(216, 19, 206);
+        font-size: 2.5vw;
+    }
+
+    .contact .request{
+        width: 40vw;
+        margin-left: 50vw;
+        font-size: 1.5vw;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px #000;
+        padding: 3vw 2vw;
+        font-weight: 300;
+    }
+
+    .contact .request h6{
+        text-align: right;
+        font-size: 1.8vw;
+    }
+    /*ACHIEVMENTS*/
+    
+
+    div.bgacheiv{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(189, 139, 31, 0.24), rgba(255, 255, 255, 0.246)),url(../images/achiev.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+
+    }
+    .achievements{
+        width: 100%;
+        padding: 10vw 2vw;
+    }
+
+    .achievements .achiev{
+        width: 52vw;
+        height: 12vw;
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: 1.82vw;
+        padding: 2vw 1vw ;
+        display: block;
+        margin: 1.5vw 1.5vw;
+    }
+
+    /*INTERESTS*/
+    div.bgint{
+        background-attachment: fixed;
+        background-image: url(../images/interest.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .interest{
+        padding: 10vw 2vw;
+        width: 100%;
+    }
+
+    .interest .slideview{
+        width: 35vw;
+        height: 30vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: left;
+    }
+
+    .slideview .slider{
+        width: 500%;
+        height: 100%;
+        position: relative;
+        animation: slideeffect 10s infinite linear;
+    }
+
+
+    @keyframes slideeffect{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+
+    .interest .slideview .slider img{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .interest .slider img:nth-child(1){
+        left: 0;
+    }
+
+    .interest .slider img:nth-child(2){
+        left: 20%;
+    }
+
+    .interest .slider img:nth-child(3){
+        left: 40%;
+    }
+
+    .interest .slider img:nth-child(4){
+        left: 60%;
+    }
+
+    .interest .slider img:nth-child(5){
+        left: 80%;
+    }
+
+    
+    .slidematterreldiv{
+        position: relative;
+    }
+
+    .slidematter{
+        color: white;
+        width: 56vw;
+        height: 52vw;
+        margin-left: 38vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 2.0vw;
+        padding: 1vw 2vw;
+        background-color: rgba(0, 0, 0, 0.295);
+    }
+
+    .slidematter .clang{
+        border: 2px solid white;
+        display: inline-block;
+        padding: 0.2vw 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .slidematter h3{
+        font-size: 3vw;
+    }
+
+    .slidematter1{
+        animation: slidematter1 10s infinite linear;
+    }
+    .slidematter2{
+        
+        animation: slidematter2 10s infinite linear;
+    }
+    .slidematter3{
+        
+        animation: slidematter3 10s infinite linear;
+    }
+    .slidematter4{
+        
+        animation: slidematter4 10s infinite linear;
+    }
+
+    
+    .stop:hover ~ .slideview .slider{
+        animation-play-state: paused;
+    }
+
+    .stop{
+        display: inline-block;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.37);
+        border: 2px solid black;
+        cursor: pointer;
+        margin: 1vw 2vw;
+        padding: 0.5vw 1vw;
+    }
+
+    .stop:hover ~ .slidematterreldiv .slidematter1{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter2{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter3{
+        animation-play-state: paused;
+    }
+    .stop:hover ~  .slidematterreldiv .slidematter4{
+        animation-play-state: paused;
+    }
+
+    @keyframes slidematter1{
+        0%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidematter2{
+        0%{
+            opacity: 0;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 1;
+        }
+        45%{
+            opacity: 1;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter3{
+        0%{
+            opacity: 0;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter4{
+        0%{
+            opacity: 0;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 1;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    /*ACADEMICS*/
+    
+    
+    div.bgacad{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(246, 210, 132, 0.514), rgba(246, 224, 162, 0.507)),url(../images/acad.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .academics{
+        padding-top: 8vw;
+        width: 100%;
+    }
+
+    .academics .schools{
+        width: 46vw;
+        float: left;
+        text-align: center;
+        margin: 2vw 5vw;
+    }
+
+    .academics .schools .cards{
+        display: inline-block;
+        height: 14vw;
+        width: 44vw;
+        background-color: rgb(214, 142, 47);
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 2vw 0;
+        animation: comefromleft 1s ease-out;
+    }
+
+    @keyframes comefromleft {
+        from{
+            opacity: 0.3;
+            transform: translateX(-30vw);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0vw);
+        }
+    }
+
+    .academics .schools .text{
+        margin-left: 15vw;
+        font-size: 1.4vw;
+    }
+
+    .academics .schools .cards img{
+        height: 100%;
+        width: 14vw;
+        float: left;
+    }
+
+    .academics .schools .cards h2{
+        margin-left: 2vw;
+        margin-top: 0.5vw;
+    }
+
+    .academics .content{
+        color: rgb(82, 49, 7);
+        background-color: rgba(255, 255, 255, 0.801);
+        margin: 2vw 5vw;
+        margin-left: 54vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 1.8vw;
+        margin:  1vw 0;
+        text-align: justify;
+    }
+
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .aboutcontent h2{
+        margin-top: 2vw;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 2vw;
+        line-height: 3vw;
+        text-align: justify;
+    }
+    .hello{
+        height: 3.6vw;
+        transform-origin: 50% 100%;
+        animation: hello 1s infinite linear;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    @keyframes hello{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(10deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .typing{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 1vw;
+    }
+
+    br.spbreak{
+        display: block;
+    }
+
+    .typing1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing1 8s infinite steps(9);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 30vw;
+        }
+        30%{
+            width: 30vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing2 8s infinite steps(10);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 36vw;
+        }
+        80%{
+            width: 36vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+
+
+    .aboutcontent {
+        z-index: 1;
+        padding: 6vw 4vw;
+        font-family: poppins;
+    }
+
+    .aboutcontent .mypic{
+        width: 30vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 4vw 2vw;
+        float: left;
+        animation: comefromleft 1s ;
+    }
+
+    .aboutcontent .text{
+        background-color: rgba(8, 44, 53, 0.541);
+        color: rgb(255, 255, 255);
+        margin-left: 34vw ;
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    /*CONTACT*/
+    
+    div.bgcontact{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-image: url(../images/bg-contact2.jpg);
+        background-size: 100% 100%;
+        z-index: -5;
+    }
+    .contact{
+        padding: 8vw 5vw 5vw;
+        width: 100%;
+    }
+
+    .contact .gtt{
+        float: left;
+        background-color: rgba(7, 4, 0, 0.226);
+        width: 45vw;
+    }
+
+    .contact h2{
+        font-size: 3vw;
+        color: rgb(255, 242, 231);
+        margin: 1vw 2vw;
+    }
+
+    .break{
+        display: block;
+    }
+
+    .contact .input1{
+        width: 30vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact .input2{
+        width: 33vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+        padding: 0 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 252, 249);
+    }
+
+    .contact .input3{
+        width: 30vw;
+        height: 20vw;
+        font-size: 1.6vw;
+        padding: 0.7vw 1vw;
+        margin: 0.7vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact #submitt{
+        display: none;
+    }
+
+    .contact .send{
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        height: 3vw;
+        width: 14vw;
+        margin: 1vw 2vw;
+        line-height: 2.2vw;
+        position: relative;
+        background-color: #fff;
+        cursor: pointer;
+        padding: 0 0.5vw;
+    }
+
+    .contact .send:hover > img{
+        animation: rotate 1.5s;
+    }
+    @keyframes rotate{
+        0%{
+            transform: translate(0vw,0vw);
+        }
+        40%{
+            transform: translate(10vw,-10vw) rotate(10deg);
+            opacity: 0;
+        }
+        40.01%{
+            transform: translate(-4vw,4vw);
+        }
+        80%{
+            transform: translate(0vw,0vw);
+        }
+
+        
+    }
+
+    .contact .send p{
+        font-size: 1.6vw;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .contact .send img{
+        margin: 0.20vw 0.3vw;
+        height: 2.5vw;
+        display: inline-block;
+        transition: 2s transform;
+        transform-origin: 600% 100%;
+    }
+
+    .contact .smedia{
+        width: 40vw;
+        padding-top: 1vw;
+        margin-left: 50vw;
+        padding-bottom: 2vw;
+        background-color: rgba(0, 0, 0, 0.178)
+    }
+
+    .contact .smedia .sm{
+        font-size: 2vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 2vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 2.3vw;
+    }
+
+    .contact .smedia a.sm:hover, .contact .smedia a.sm2:hover{
+        text-decoration: underline;
+    }
+
+    .fab,.fas{
+        margin: 0 0.5vw;
+    }
+
+    .gm{
+        font-size: 2.5vw;
+        color: rgb(173, 24, 24);
+    }
+    .mail{
+        font-size: 2.5vw;
+        color: rgb(20, 135, 230);
+    }
+    .tele{
+        font-size: 2.5vw;
+        color: rgb(5, 149, 17);
+    }
+    .fb{
+        color: rgb(27, 27, 100);
+        font-size: 2.5vw;
+    }
+    .tw{
+        color: rgb(0, 238, 255);
+        font-size: 2.5vw;
+    }
+    .gh{
+        color: rgb(5, 5, 37);
+        font-size: 2.5vw;
+    }
+    .ins{
+        color: rgb(216, 19, 206);
+        font-size: 2.5vw;
+    }
+
+    .contact .request{
+        width: 40vw;
+        margin-left: 50vw;
+        font-size: 1.5vw;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px #000;
+        padding: 3vw 2vw;
+        font-weight: 300;
+    }
+
+    .contact .request h6{
+        text-align: right;
+        font-size: 1.8vw;
+    }
+    /*ACHIEVMENTS*/
+    
+
+    div.bgacheiv{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(189, 139, 31, 0.24), rgba(255, 255, 255, 0.246)),url(../images/achiev.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+
+    }
+    .achievements{
+        width: 100%;
+        padding: 10vw 2vw;
+    }
+
+    .achievements .achiev{
+        width: 52vw;
+        height: 12vw;
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: 1.82vw;
+        padding: 2vw 1vw ;
+        display: block;
+        margin: 1.5vw 1.5vw;
+    }
+
+    /*INTERESTS*/
+    div.bgint{
+        background-attachment: fixed;
+        background-image: url(../images/interest.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .interest{
+        padding: 10vw 2vw;
+        width: 100%;
+    }
+
+    .interest .slideview{
+        width: 35vw;
+        height: 30vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: left;
+    }
+
+    .slideview .slider{
+        width: 500%;
+        height: 100%;
+        position: relative;
+        animation: slideeffect 10s infinite linear;
+    }
+
+
+    @keyframes slideeffect{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+
+    .interest .slideview .slider img{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .interest .slider img:nth-child(1){
+        left: 0;
+    }
+
+    .interest .slider img:nth-child(2){
+        left: 20%;
+    }
+
+    .interest .slider img:nth-child(3){
+        left: 40%;
+    }
+
+    .interest .slider img:nth-child(4){
+        left: 60%;
+    }
+
+    .interest .slider img:nth-child(5){
+        left: 80%;
+    }
+
+    
+    .slidematterreldiv{
+        position: relative;
+    }
+
+    .slidematter{
+        color: white;
+        width: 56vw;
+        height: 52vw;
+        margin-left: 38vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 2.0vw;
+        padding: 1vw 2vw;
+        background-color: rgba(0, 0, 0, 0.295);
+    }
+
+    .slidematter .clang{
+        border: 2px solid white;
+        display: inline-block;
+        padding: 0.2vw 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .slidematter h3{
+        font-size: 3vw;
+    }
+
+    .slidematter1{
+        animation: slidematter1 10s infinite linear;
+    }
+    .slidematter2{
+        
+        animation: slidematter2 10s infinite linear;
+    }
+    .slidematter3{
+        
+        animation: slidematter3 10s infinite linear;
+    }
+    .slidematter4{
+        
+        animation: slidematter4 10s infinite linear;
+    }
+
+    
+    .stop:hover ~ .slideview .slider{
+        animation-play-state: paused;
+    }
+
+    .stop{
+        display: inline-block;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.37);
+        border: 2px solid black;
+        cursor: pointer;
+        margin: 1vw 2vw;
+        padding: 0.5vw 1vw;
+    }
+
+    .stop:hover ~ .slidematterreldiv .slidematter1{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter2{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter3{
+        animation-play-state: paused;
+    }
+    .stop:hover ~  .slidematterreldiv .slidematter4{
+        animation-play-state: paused;
+    }
+
+    @keyframes slidematter1{
+        0%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidematter2{
+        0%{
+            opacity: 0;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 1;
+        }
+        45%{
+            opacity: 1;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter3{
+        0%{
+            opacity: 0;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter4{
+        0%{
+            opacity: 0;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 1;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    /*ACADEMICS*/
+    
+    
+    div.bgacad{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(246, 210, 132, 0.514), rgba(246, 224, 162, 0.507)),url(../images/acad.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .academics{
+        padding-top: 8vw;
+        width: 100%;
+    }
+
+    .academics .schools{
+        width: 46vw;
+        float: left;
+        text-align: center;
+        margin: 2vw 5vw;
+    }
+
+    .academics .schools .cards{
+        display: inline-block;
+        height: 14vw;
+        width: 44vw;
+        background-color: rgb(214, 142, 47);
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 2vw 0;
+        animation: comefromleft 1s ease-out;
+    }
+
+    @keyframes comefromleft {
+        from{
+            opacity: 0.3;
+            transform: translateX(-30vw);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0vw);
+        }
+    }
+
+    .academics .schools .text{
+        margin-left: 15vw;
+        font-size: 1.4vw;
+    }
+
+    .academics .schools .cards img{
+        height: 100%;
+        width: 14vw;
+        float: left;
+    }
+
+    .academics .schools .cards h2{
+        margin-left: 2vw;
+        margin-top: 0.5vw;
+    }
+
+    .academics .content{
+        color: rgb(82, 49, 7);
+        background-color: rgba(255, 255, 255, 0.801);
+        margin: 2vw 5vw;
+        margin-left: 54vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 1.8vw;
+        margin:  1vw 0;
+        text-align: justify;
+    }
+
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .aboutcontent h2{
+        margin-top: 2vw;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 2vw;
+        line-height: 3vw;
+        text-align: justify;
+    }
+    .hello{
+        height: 3.6vw;
+        transform-origin: 50% 100%;
+        animation: hello 1s infinite linear;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    @keyframes hello{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(10deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .typing{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 1vw;
+    }
+
+    br.spbreak{
+        display: block;
+    }
+
+    .typing1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing1 8s infinite steps(9);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 30vw;
+        }
+        30%{
+            width: 30vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing2 8s infinite steps(10);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 36vw;
+        }
+        80%{
+            width: 36vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+
+@media screen and (max-width:700px){ 
+    .copyrights{
+        position: fixed;
+        font-size: 2vw;
+        bottom: 0;
+        left: 0;
+        height: 6vw;
+        border-radius: 2000px;
+        line-height: 6vw;
+        padding-left: 6vw;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+    }
+
+    .copysym{
+        float: left;
+    }
+
+    .rightfloat{
+        float: right;
+        margin: 0 3vw;
+    }
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .reldiv{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    video{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+
+
+    .topnavbar{
+        height: 12vw;
+        box-sizing: content-box;
+        border: 2px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 12;
+    }
+    
+    .topnavbar h1{
+        line-height: 12vw;
+        font-size: 6vw;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 3vw;
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .topnavbar #checkbtn{
+        display: none;
+    }
+    
+    .topnavbar .fa-bars{
+        font-size: 6vw;
+        display: block;
+        margin: 1vw 0;
+        padding: 1vw 1vw;
+        float: right;
+        margin-right: 3vw;
+        color: white;
+        position: fixed;
+        right: 0;
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 120;
+        cursor: pointer;
+    }
+    .topnavbar #checkbtn:checked ~ .navgtn{
+        left: 0%;
+    }
+    
+    .topnavbar .navgtn{
+        padding-top: 10vw;
+        position: fixed;
+        background-color: black;
+        left: 120vw;
+        height: 100%;
+        list-style-type: none;
+        width: 100%;
+        z-index: 1;
+        transition: 0.5s left;
+    }
+    
+    .topnavbar .navgtn li{
+        display: block;
+        width: 100%;
+        font-size: 4vw;
+        line-height: 6vw;
+        margin: 3vw 2vw;
+    }
+    
+    
+    .topnavbar .navgtn li a{
+        display: inline-block;
+        font-size: 4vw;
+        width: 80%;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 2vw 1vw ;
+    } 
+
+    .topnavbar .navgtn li a:hover{
+        text-decoration: underline;
+    } 
+
+
+    .topnavbar .navgtn li i{
+        margin-right: 2vw;
+    }
+
+
+    .aboutcontent {
+        z-index: 1;
+        padding: 14vw 4vw;
+        font-family: poppins;
+        text-align: center;
+    }
+
+    .aboutcontent .mypic{
+        width: 50vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 4vw 2vw;
+        display: inline-block;
+        float: none;
+        animation: comefromleft 1s ;
+    }
+
+    .aboutcontent .text{
+        background-color: rgba(8, 44, 53, 0.541);
+        color: rgb(255, 255, 255);
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    /*CONTACT*/
+    
+    div.bgcontact{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-image: url(../images/bg-contact2.jpg);
+        background-size: 100% 100%;
+        z-index: -5;
+    }
+    .contact{
+        padding: 14vw 5vw 10vw;
+        width: 100%;
+    }
+
+    .contact .gtt{
+        float: none;
+        display: block;
+        background-color: rgba(7, 4, 0, 0.226);
+        width: 100%;
+        padding: 3vw;
+    }
+
+    .contact h2{
+        font-size: 6vw;
+        color: rgb(255, 242, 231);
+        margin: 1vw 2vw;
+    }
+
+    .break{
+        display: block;
+    }
+
+    .contact .input1{
+        width: 50vw;
+        height: 6vw;
+        font-size: 3vw;
+        padding: 0 1vw;
+        margin: 1vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact .input2{
+        width: 60vw;
+        height: 6vw;
+        font-size: 3vw;
+        padding: 0 1vw;
+        margin: 2vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 252, 249);
+    }
+
+    .contact .input3{
+        width: 55vw;
+        height: 30vw;
+        font-size: 3vw;
+        padding: 0.7vw 1vw;
+        margin: 2vw 2vw;
+        font-family: poppins;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .contact #submitt{
+        display: none;
+    }
+
+    .contact .send{
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        height: 6vw;
+        width: 24vw;
+        margin: 1vw 2vw;
+        line-height: 6vw;
+        position: relative;
+        background-color: #fff;
+        cursor: pointer;
+        padding: 0 0.5vw;
+    }
+
+    .contact .send:hover > img{
+        animation: rotate 1.5s;
+    }
+    @keyframes rotate{
+        0%{
+            transform: translate(0vw,0vw);
+        }
+        40%{
+            transform: translate(10vw,-10vw) rotate(10deg);
+            opacity: 0;
+        }
+        40.01%{
+            transform: translate(-4vw,4vw);
+        }
+        80%{
+            transform: translate(0vw,0vw);
+        }
+
+        
+    }
+
+    .contact .send p{
+        font-size: 3vw;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .contact .send img{
+        margin: 0.20vw 0.3vw;
+        height: 5vw;
+        display: inline-block;
+        transition: 2s transform;
+        transform-origin: 600% 100%;
+    }
+
+    .contact .smedia{
+        width: 100%;
+        margin: 0;
+        display: block;
+        padding: 4vw;
+        background-color: rgba(0, 0, 0, 0.178)
+    }
+
+    .contact .smedia .sm{
+        font-size: 3vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia .sm2{
+        font-size: 3vw;
+        display: inline-block;
+        margin: 0.35vw 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact .smedia h3{
+        color: white;
+        margin: 0.25vw 2vw;
+        font-size: 4vw;
+    }
+
+    .contact .smedia a.sm:hover, .contact .smedia a.sm2:hover{
+        text-decoration: underline;
+    }
+
+    .fab,.fas{
+        margin: 0 3vw;
+    }
+
+    .gm{
+        font-size: 3vw;
+        color: rgb(173, 24, 24);
+    }
+    .mail{
+        font-size: 3vw;
+        color: rgb(20, 135, 230);
+    }
+    .tele{
+        font-size: 3vw;
+        color: rgb(5, 149, 17);
+    }
+    .fb{
+        color: rgb(27, 27, 100);
+        font-size: 3vw;
+    }
+    .tw{
+        color: rgb(0, 238, 255);
+        font-size: 3vw;
+    }
+    .gh{
+        color: rgb(5, 5, 37);
+        font-size: 3vw;
+    }
+    .ins{
+        color: rgb(216, 19, 206);
+        font-size: 3vw;
+    }
+
+    .contact .request{
+        width: 100%;
+        margin: 0;
+        font-size: 2.5vw;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px #000;
+        padding: 3vw 2vw;
+        font-weight: 300;
+    }
+
+    .contact .request h6{
+        text-align: right;
+        font-size: 4vw;
+    }
+    /*ACHIEVMENTS*/
+    
+
+    div.bgacheiv{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(189, 139, 31, 0.24), rgba(255, 255, 255, 0.246)),url(../images/achiev.jpg);
+        background-position: right;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+
+    }
+    .achievements{
+        width: 100%;
+        padding: 15vw 5vw;
+    }
+
+    .achievements .achiev{
+        width: 90vw;
+        height: 20vw;
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: 3vw;
+        padding: 3vw 1vw ;
+        display: block;
+        margin: 1.5vw 1.5vw;
+    }
+
+    /*INTERESTS*/
+    div.bgint{
+        background-attachment: fixed;
+        background-image: url(../images/interest.jpg);
+        background-size: cover;
+        position: fixed;
+        background-position: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .interest{
+        padding: 15vw 5vw;
+        width: 100%;
+    }
+
+    .interest .slideview{
+        width: 80vw;
+        height: 60vw;
+        border: 2px solid black;
+        overflow: hidden;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .slideview .slider{
+        width: 500%;
+        height: 100%;
+        position: relative;
+        animation: slideeffect 10s infinite linear;
+    }
+
+
+    @keyframes slideeffect{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+
+    .interest .slideview .slider img{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .interest .slider img:nth-child(1){
+        left: 0;
+    }
+
+    .interest .slider img:nth-child(2){
+        left: 20%;
+    }
+
+    .interest .slider img:nth-child(3){
+        left: 40%;
+    }
+
+    .interest .slider img:nth-child(4){
+        left: 60%;
+    }
+
+    .interest .slider img:nth-child(5){
+        left: 80%;
+    }
+
+    
+    .slidematterreldiv{
+        position: relative;
+        display: block;
+    }
+
+    .slidematter{
+        color: white;
+        width: 100%;
+        height: 100vw;
+        margin: 5vw 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 4vw;
+        padding: 1vw 2vw;
+        background-color: rgba(0, 0, 0, 0.295);
+    }
+
+    .slidematter .clang{
+        border: 2px solid white;
+        display: inline-block;
+        padding: 0.2vw 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .slidematter h3{
+        font-size: 5vw;
+    }
+
+    .slidematter1{
+        animation: slidematter1 10s infinite linear;
+    }
+    .slidematter2{
+        
+        animation: slidematter2 10s infinite linear;
+    }
+    .slidematter3{
+        
+        animation: slidematter3 10s infinite linear;
+    }
+    .slidematter4{
+        
+        animation: slidematter4 10s infinite linear;
+    }
+
+    
+    .stop:hover ~ .slideview .slider{
+        animation-play-state: paused;
+    }
+
+    .stop{
+        display: inline-block;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.37);
+        border: 2px solid black;
+        cursor: pointer;
+        margin: 1vw 2vw;
+        padding: 0.5vw 1vw;
+    }
+
+    .stop:hover ~ .slidematterreldiv .slidematter1{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter2{
+        animation-play-state: paused;
+    }
+    .stop:hover ~ .slidematterreldiv .slidematter3{
+        animation-play-state: paused;
+    }
+    .stop:hover ~  .slidematterreldiv .slidematter4{
+        animation-play-state: paused;
+    }
+
+    @keyframes slidematter1{
+        0%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidematter2{
+        0%{
+            opacity: 0;
+        }
+        22.5%{
+            opacity: 0;
+        }
+        25%{
+            opacity: 1;
+        }
+        45%{
+            opacity: 1;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter3{
+        0%{
+            opacity: 0;
+        }
+        47.5%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes slidematter4{
+        0%{
+            opacity: 0;
+        }
+        72.5%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 1;
+        }
+        97.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    /*ACADEMICS*/
+    
+    
+    div.bgacad{
+        background-attachment: fixed;
+        background-image: linear-gradient(to right bottom, rgba(246, 210, 132, 0.514), rgba(246, 224, 162, 0.507)),url(../images/acad.jpg);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+    .academics{
+        padding-top: 16vw;
+        width: 100%;
+    }
+
+    .academics .schools{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 2vw 0;
+    }
+
+    .academics .schools .cards{
+        display: inline-block;
+        height: 24vw;
+        width: 80%;
+        background-color: rgb(214, 142, 47);
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 2vw 0;
+        animation: comefromleft 1s ease-out;
+    }
+
+    @keyframes comefromleft {
+        from{
+            opacity: 0.3;
+            transform: translateX(-30vw);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0vw);
+        }
+    }
+
+    .academics .schools .text{
+        margin-left: 25vw;
+        font-size: 2.5vw;
+    }
+
+    .academics .schools .cards img{
+        height: 100%;
+        width: 24vw;
+        float: left;
+    }
+
+    .academics .schools .cards h2{
+        margin-left: 2vw;
+        margin-top: 0.5vw;
+    }
+
+    .academics .content{
+        color: rgb(82, 49, 7);
+        background-color: rgba(255, 255, 255, 0.801);
+        margin-left: 0;
+        margin: 2vw 5vw;
+        padding: 2vw 2vw;
+    }
+
+    .academics p{
+        font-size: 3.5vw;
+        margin:  2vw 0;
+        text-align: justify;
+    }
+
+    div.bg{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    .aboutcontent h2{
+        margin-top: 2vw;
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    .aboutcontent p{
+        margin-top: 3vw;
+        font-size: 4vw;
+        line-height: 5.2vw;
+        text-align: justify;
+    }
+    .hello{
+        height: 5.2vw;
+        transform-origin: 50% 100%;
+        animation: hello 1s infinite linear;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    @keyframes hello{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(10deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .typing{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 8vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 1vw;
+    }
+
+    br.spbreak{
+        display: block;
+    }
+
+    .typing1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 8vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing1 8s infinite steps(9);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing1{
+        0%{
+            width: 0;
+        }
+        20%{
+            width: 45vw;
+        }
+        30%{
+            width: 45vw;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+    .typing2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 8vw;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 0.5vw;
+        animation: typing2 8s infinite steps(10);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing2{
+        0%{
+            width: 0;
+            display: none;
+        }
+        50%{
+            width: 0;
+        }
+        50.01%{
+            width: 0;
+            display: inline-block;
+        }
+        70%{
+            width: 55vw;
+        }
+        80%{
+            width: 55vw;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
